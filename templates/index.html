@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage | AutoMobile Managment</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the HomePage</h1>
+      <form action="/" method="post">
+        <label for="symboling">Symboling :</label>
+        <input type="number" name="symboling" required />
+        <br />
+        <label for="normalized-losses">Normalized-losses :</label>
+        <input type="number" name="normalized-losses" step="any" required />
+        <br />
+        <label for="make">make :</label>
+        <input type="text" name="make" required />
+        <br />
+        <label for="fuel-type">fuel-type :</label>
+        <input type="text" name="fuel-type" required />
+        <br />
+        <label for="aspiration">aspiration :</label>
+        <input type="text" name="aspiration" required />
+        <br />
+        <label for="num-of-doors">num-of-doors :</label>
+        <input type="text" name="num-of-doors" required />
+        <br />
+        <label for="body-style">body-style :</label>
+        <input type="text" name="body-style" required />
+        <br />
+        <label for="drive-wheels">drive-wheels :</label>
+        <input type="text" name="drive-wheels" required />
+        <br />
+        <label for="engine-location">engine-location :</label>
+        <input type="text" name="engine-location" required />
+        <br />
+        <label for="engine-type">engine-type :</label>
+        <input type="text" name="engine-type" required />
+        <br />
+        <label for="num-of-cylinders">num-of-cylinders :</label>
+        <input type="text" name="num-of-cylinders" required />
+        <br />
+        <label for="fuel-system">fuel-system :</label>
+        <input type="text" name="fuel-system" required />
+        <br />
+        <label for="wheel-base">wheel-base :</label>
+        <input type="number" name="wheel-base" step="any" required />
+        <br />
+        <label for="length">length :</label>
+        <input type="number" name="length" step="any" required />
+        <br />
+        <label for="width">width :</label>
+        <input type="number" name="width" step="any" required />
+        <br />
+        <label for="height">height :</label>
+        <input type="number" name="height" step="any" required />
+        <br />
+        <label for="curb-weight">curb-weight :</label>
+        <input type="number" name="curb-weight" step="any" required />
+        <br />
+        <label for="engine-size">engine-size :</label>
+        <input type="number" name="engine-size" step="any" required />
+        <br />
+        <label for="bore">bore :</label>
+        <input type="number" name="bore" step="any" required />
+        <br />
+        <label for="stroke">stroke :</label>
+        <input type="number" name="stroke" step="any" required />
+        <br />
+        <label for="compression-ratio">compression-ratio :</label>
+        <input type="number" name="compression-ratio" step="any" required />
+        <br />
+        <label for="horsepower">horsepower :</label>
+        <input type="number" name="horsepower" step="any" required />
+        <br />
+        <label for="peak-rpm">peak-rpm :</label>
+        <input type="number" name="peak-rpm" step="any" required />
+        <br />
+        <label for="city-mpg">city-mpg :</label>
+        <input type="number" name="city-mpg" step="any" required />
+        <br />
+        <label for="highway-mpg">highway-mpg :</label>
+        <input type="number" name="highway-mpg" step="any" required />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <br />
+    {% if output %}
+    <div class="main"><h1>Result for Last Data : {{output}}</h1></div>
+    {% endif %}
+  </body>
+</html>
